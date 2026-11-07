@@ -1,0 +1,15 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+
+parameters:
+    level: 6
+    paths:
+        - app/
+    treatPhpDocTypesAsCertain: false
+    checkModelProperties: false
+    ignoreErrors:
+        # Eloquent/Livewire dynamic attributes; models use $fillable + casts.
+        # Tighten with @property annotations in Phase 11 hardening.
+        -
+            identifier: property.notFound
+            path: app/Modules/*

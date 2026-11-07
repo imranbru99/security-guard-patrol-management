@@ -1,0 +1,16 @@
+{
+  "name": "GuardOps Guard",
+  "short_name": "GuardOps",
+  "start_url": "/guard",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0d9488",
+  "description": "Security guard PWA for shifts, patrols, and incidents.",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}
